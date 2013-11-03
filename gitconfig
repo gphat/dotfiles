@@ -1,18 +1,15 @@
 [user]
-	name = Cory G Watson
-	email = gphat@onemogin.com
+    name = Cory G Watson
+    email = gphat@onemogin.com
 [core]
-	quotepath = false
-	excludesfile = /Users/gphat/.gitignore_global
+    quotepath = false
+    excludesfile = /Users/gphat/.gitignore_global
 [difftool "Kaleidoscope"]
-	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [difftool]
 	prompt = false
 [diff]
 	tool = Kaleidoscope
-[difftool "sourcetree"]
-	cmd = /Applications/Kaleidoscope.app/Contents/MacOS/ksdiff -w \"$LOCAL\" \"$REMOTE\"
-	path = 
 [alias]
         lol = log --graph --decorate --pretty=oneline --abbrev-commit
         lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
@@ -21,3 +18,13 @@
         diff = auto
         interactive = auto
         status = auto
+        ui=true
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
+[mergetool]
+	prompt = false
+[merge]
+	tool = Kaleidoscope
+[push]
+	default = simple
