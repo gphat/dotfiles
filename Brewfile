@@ -1,0 +1,5 @@
+brew "fish"
+brew "fzf"
+brew "git"
+brew "stow"
+cask "ghostty"
