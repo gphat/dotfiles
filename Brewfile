@@ -1,5 +1,7 @@
 brew "fish"
 brew "fzf"
 brew "git"
+brew "git-extras"
+brew "neovim"
 brew "stow"
 cask "ghostty"
