@@ -1,4 +1,8 @@
 font-family = "JetBrains Mono"
 font-size = 16
 theme = Dracula
+window-decoration = true
 keybind = shift+enter=text:\x1b\r
+background-blur-radius = 20
+background-opacity = 0.7
+mouse-hide-while-typing = true
