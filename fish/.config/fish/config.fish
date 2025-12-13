@@ -17,4 +17,5 @@ set -Ux FZF_DEFAULT_OPTS "--color=fg:#f8f8f2,bg:#282a36,hl:#bd93f9 --color=fg+:#
 # Starship
 starship init fish | source
 
-neofetch
+fastfetch
+
