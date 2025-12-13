@@ -14,3 +14,10 @@
 	default = simple
 [init]
 	defaultBranch = main
+[diff]
+	tool = Kaleidoscope
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+	trustExitCode = true
